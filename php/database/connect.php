@@ -4,7 +4,7 @@ error_reporting(0);
 $user = 'root';
 $pass = 'transport';
 $url = 'localhost';
-$db_name = 'buspass';
+$db_name = 'Buspass';
 
 // Create connection
 $conn = mysqli_connect($url, $user, $pass, $db_name);

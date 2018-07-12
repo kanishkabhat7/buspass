@@ -77,10 +77,8 @@
 	}
 </style>
 </div>
-<p class="butt-new"><a href="../../traveller-edit.php">Edit</a></p>
+<p class="butt-new"><a href="traveller-edit.php">Edit</a></p>
 <p class="butt-new"><a href="delete.php">Delete</a></p>
-<p class="butt-new"><a href="../../traveller-new.html">
-Add a new contact</a></p>
 
 </body>
 </html>	

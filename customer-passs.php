@@ -16,7 +16,8 @@
       if (mysqli_query($conn, $sql)) {
          echo "Registered successfully";
       }
-      else {
+      else 
+      {
             echo "Error";
       }
    mysqli_close($conn);

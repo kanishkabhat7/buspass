@@ -42,12 +42,12 @@
 
              <tr>
                 <td>Username</td>
-             	<td><?php echo $username; ?></td>
+             	  <td><?php echo $username; ?></td>
              	
              </tr>
              <tr>
                 <td>Name</td>
-             	<td><?php echo $firstname. $lastname ; ?></td>
+             	<td><?php echo $firstname." ". $lastname ; ?></td>
              	
              </tr>
 

@@ -4,12 +4,24 @@
     <title>Travellers</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="main.css" />
+    <style>
+  table tr td
+  {
+    color:blue;
+    padding:10px;
+  }
+  body
+  {
+    overflow-x:hidden !important;
+  }
+</style>
 </head>
-<body>
-
-
+<body >
 <?php
   include("main1.php"); 
+  ?>
+
+<?php
   include("php/database/connect.php");
 
 	$sql = "SELECT * FROM customer;";
@@ -28,11 +40,11 @@
 
 <div style="width:57%;height:50px;">
 
-<h2 style="text-align:left;color:black;background-color: green">Registered Travellers</h2>
+<h2 style="text-align:left;color:white;background-color: black">Registered Travellers</h2>
 
 </div>
-<div >
-	<div style="width:100%;float:left;margin:10px">
+
+<div style="width:100%;float:left;margin:10px">
 </div>
 	
 
@@ -69,16 +81,10 @@
               	
               </tr>
 	</table>
-	<style>
-	table tr td
-	{
-		color:blue;
-		padding:10px;
-	}
-</style>
+  <button style="background-color:black;" class="butt-new"><a style="background-color:black;color:white;" href="traveller-edit.php">Edit</a></button>
 </div>
-<p class="butt-new"><a href="traveller-edit.php">Edit</a></p>
-<p class="butt-new"><a href="delete.php">Delete</a></p>
+<!--<p class="butt-new"><a style="color:white;" href="php/functions/delete.php?id=<?echo $row['id'];?>">Delete</a></p>-->
 
+	
 </body>
 </html>	

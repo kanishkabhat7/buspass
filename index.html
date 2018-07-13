@@ -115,9 +115,10 @@ button
     <div style="background-image:linear-gradient(grey,purple);font-size:5px;margin-bottom:10px;text-align:center;">
         <div>
         <marquee style="color:#222;font-size:40px;align:center;">WELCOME TO BUS PASS SYSTEM</marquee></div>
-        <div><button id="c" class="btnn">Home</button>
+        <div>
+        <button id="c" class="btnn">Home</button>
         <button id="a" class="btnn">Login</button>
-        <button class="btnn">Bus info</button>
+        <button class="btnn" onclick="location.href='businfo.html'">Bus info</button>
         <button id="b" class="btnn">Registration</button></div>
         <div id='testimonial-slider' class="owl-carousel">
         <div class="testimonial">
@@ -125,54 +126,55 @@ button
     <img src="3.jpg" height="300" width="1000">
     </div></div>
     <div id="reg" class="h3" style="display:none;"><h2 style="color:blue;">Register as a Customer</h2>
+    <div style="background-color:purple;padding-top:30px;padding-bottom:30px;margin-left:450px;margin-right:450px;"> 
 		<form action="php/functions/customer-reg.php" name="customer-register" method="post" >
        
-   		<label for="username">User Name </br>
+   		<label for="username">User Name </br></br>
            
  			<input type="text" name="username" required />
          
-  		 </label> 
+  		 </label></br></br>
 
         
-   		<label for="firstname">First Name </br>
+   		<label for="firstname">First Name </br></br>
           
 			<input type="text" name="firstname" required />
           
-   		</label> 
+   		</label> </br></br>
 
          
-   		<label for="lastname">Last Name </label>br>
+   		<label for="lastname">Last Name </label></br></br>
           
 			<input type="text" name="lastname" required />
         
-   		</label> 
+   		</label> </br></br>
 
          
-   		<label for="password">Password </br>
+   		<label for="password">Password </br></br>
         
   			<input type="password" name="password" required />
          
-   		</label> 
+   		</label> </br></br>
 
         
-   		<label for="pass_re">Re-enter Password</br>
+   		<label for="pass_re">Re-enter Password</br></br>
        
    			<input type="password" name="pass_re" required />
  
-   		</label>
-  	 	<label for="age">Enter Age</br>      
+   		</label></br></br>
+  	 	<label for="age">Enter Age</br></br>      
    			<input type="number" name="age" required />
 
-   		</label>
-   		<label for="gender">Enter Gender</br>     
+   		</label></br></br>
+   		<label for="gender">Enter Gender</br></br>     
         		<select name="gender"><option selected="true" disabled="disabled">Choose tagging</option>
 			<option value="Male">Male</option> 
 			<option value="Female">Female</option></select>
-  	        </label>  
-   		<label for="address">Enter Address</br>      
+  	        </label>  </br></br>
+   		<label for="address">Enter Address</br></br>   
    			<input type="text" name="address" required />
        
-   		</label> 
+   		</label> </br></br>
 
   
    		<label>        
@@ -181,8 +183,10 @@ button
    		</label>      
  		</form>
    </div>
+</div>
 	<div id="log" class="h3" style="display:none;">        
-		<h3>Login</h3>   
+		<h3>Login</h3>  
+    <div style="background-color:purple;padding-top:30px;padding-bottom:30px;margin-left:450px;margin-right:450px;"> 
 		<form  action="php/functions/customer-log.php" name="customer-login" method="post">
               
   		<label for="userid">User Name </br></br>
@@ -203,13 +207,13 @@ button
        
  		</form>
 
-       
+    </div> 
  		<br><p class="h3"><a href="admin-login.html">Are you an Adminstrator?</a></p>
   
  		
 </div>  
-<div class="container" id="home"
- style="font-size:20px;padding-top:20px;display:none;"> 
+<div id="home" style="display:none;">
+<div class="container"  style="font-size:20px;padding-top:20px;"> 
  <div style="font-size: 30px;background-color: black;color:white;font-family: italics;margin-bottom: 30px;"><center>ABOUT US<center></div>
  <p> We are creating this service to provide "safe, reliable, time
 saving, efficient, comfortable and affordable" services for
@@ -296,15 +300,17 @@ limitations of the existing software.
 <p>CONTACT US : 9123455600</p>
 <p>EMAIL US : adminbus@gmail.com</p>
 </footer>
+</div>
 
 
 
  
 
 <script type="text/javascript">
-  var a=document.getElementById('a');
+    var a=document.getElementById('a');
     var b=document.getElementById('b');
     var c=document.getElementById('c');
+    
     a.addEventListener('click',function(){
     document.getElementById('log').style.display="block";
     document.getElementById('reg').style.display="none";
@@ -314,9 +320,10 @@ limitations of the existing software.
     document.getElementById('log').style.display="none";
     document.getElementById('home').style.display="none";});
     c.addEventListener('click',function(){
+    document.getElementById('home').style.display="block";
     document.getElementById('reg').style.display="none";
-    document.getElementById('log').style.display="none";
-    document.getElementById('home').style.display="block";}); 
+    document.getElementById('log').style.display="none";});
+    
 </script>
 </body>
 </html>

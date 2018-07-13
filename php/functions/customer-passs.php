@@ -20,5 +20,12 @@
       {
             echo "Error";
       }
+     
+      $sql1="UPDATE pass SET username=username+'$username',pass_id=pass_id+'$pass_id', bus_no=bus_no+'$bus_no',start_stp=start_stp+'$start_stp',end_stp=end_stp+'$end_stp',bus_type=bus_type+'$bus_type',pass_amt=pass_amt+'$pass_amt',card_no=card_no+'$card_no',expiry=expiry+'$expiry';";
+       if(mysqli_query($conn,$sql))
+      {
+         
+      echo "Registered successfully";
+       }
    mysqli_close($conn);
 ?>

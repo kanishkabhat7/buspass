@@ -92,10 +92,10 @@ em {
 
 .main-page
 {
-  width: 100%;
+  width: 80%;
   padding: 1% 0;
   background-image: linear-gradient(to bottom, #004da4 0%, #1e3c6e 100%);
-  float: left
+  float: left;
 }
 .main-page h3
 {

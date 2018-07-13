@@ -29,7 +29,7 @@
 <h3>Create Pass</h3>
 
         
-<form action="customer-passs.php" name="customer-pass" method="post">
+<form action="php/functions/customer-passs.php" name="customer-pass" method="post">
        
    <label for="username">User Name <br/>
            

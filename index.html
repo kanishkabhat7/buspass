@@ -6,6 +6,10 @@
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
@@ -101,53 +105,57 @@
     color: #1f487e;
 }
 .owl-next:before{ content: "\f054"; } 
+button
+{
+  font-size: 10px;
+}
 </style> 
    </head>
     <body>
     <div style="background-image:linear-gradient(grey,purple);font-size:5px;margin-bottom:10px;text-align:center;">
         <div>
         <marquee style="color:#222;font-size:40px;align:center;">WELCOME TO BUS PASS SYSTEM</marquee></div>
-        <div><button class="btnn">Home</button>
+        <div><button id="c" class="btnn">Home</button>
         <button id="a" class="btnn">Login</button>
         <button class="btnn">Bus info</button>
         <button id="b" class="btnn">Registration</button></div>
         <div id='testimonial-slider' class="owl-carousel">
         <div class="testimonial">
-        <img width="500" height="100" src="images/busseat.jpg"></div><img width="500" height="100" src="images/bus.jpg">
-        
+        <img width="1000" height="300" src="1.jpg"></div><img src="2.jpg" height="300" width="1000"> 
+    <img src="3.jpg" height="300" width="1000">
     </div></div>
     <div id="reg" class="h3" style="display:none;"><h2 style="color:blue;">Register as a Customer</h2>
 		<form action="php/functions/customer-reg.php" name="customer-register" method="post" >
        
-   		<label for="username">User Name <br/>
+   		<label for="username">User Name </br>
            
  			<input type="text" name="username" required />
          
   		 </label> 
 
         
-   		<label for="firstname">First Name <br/>
+   		<label for="firstname">First Name </br>
           
 			<input type="text" name="firstname" required />
           
    		</label> 
 
          
-   		<label for="lastname">Last Name <br/>
+   		<label for="lastname">Last Name </label>br>
           
 			<input type="text" name="lastname" required />
         
    		</label> 
 
          
-   		<label for="password">Password <br/>
+   		<label for="password">Password </br>
         
   			<input type="password" name="password" required />
          
    		</label> 
 
         
-   		<label for="pass_re">Re-enter Password<br/>
+   		<label for="pass_re">Re-enter Password</br>
        
    			<input type="password" name="pass_re" required />
  
@@ -177,21 +185,21 @@
 		<h3>Login</h3>   
 		<form  action="php/functions/customer-log.php" name="customer-login" method="post">
               
-  		<label for="userid">User Name <br/>
+  		<label for="userid">User Name </br></br>
        
    			<input type="text" name="username" required />
          
- 		</label>
+ 		</label></br>
 
         
-        	<label for="password">Password <br/>
+        	</br><label for="password">Password </br></br>
          
- 			<input type="password" name="password" required />
+ 			<input type="password" name="password" required /></br>
         
-  		</label>
+  		</label></br>
 
          
- 			<input type="submit" value="Login"/>
+ 			</br><input type="submit" value="Login"/>
        
  		</form>
 
@@ -200,15 +208,115 @@
   
  		
 </div>  
+<div class="container" id="home"
+ style="font-size:20px;padding-top:20px;display:none;"> 
+ <div style="font-size: 30px;background-color: black;color:white;font-family: italics;margin-bottom: 30px;"><center>ABOUT US<center></div>
+ <p> We are creating this service to provide "safe, reliable, time
+saving, efficient, comfortable and affordable" services for
+people, although the cost for providing this service has
+been substantial. It is heavily subsidized by the
+government and is reportedly in the red, like most of
+India's state run road transport undertakings. Even though
+we have lot of technology development in Pune, we
+haven’t got any official website for Bus Pass Registration
+and Renewal as many of our Neighbor states possess.
+
+
+Hence we came with this idea that would help  people in a
+better way. As per the previous system of our state people
+had to do each and every process manually, but this
+system helps people to make the work a bit faster.
+
+
+Customer can register for the Bus Pass over the Internet,
+ Furthermore,
+customers no need to pay cash to buy bus pass because
+they can pay the amount using Credit Card.
+ Hence,
+there is a need of reformation of the formal system with
+more advantages and flexibility. Because of the drawbacks
+that are present in the existing system, we got this idea that
+would help people in a better way.
+
+ Customer can buy
+the bus pass over the Internet, 24 hours a day throughout
+the week, this solves the issue of bus ticket being
+misplaced or stolen. Hence, there is a need of reformation
+of the system with more advantages and flexibility. The
+Bus Scheduling and Booking System eliminate most of the
+limitations of the existing software.
+</p>
+<br>
+<div style="font-size: 30px;background-color: black;color:white;font-family: italics;margin-bottom: 30px;"><center>BUS TYPES<center></div>
+<div class="container">
+<div class="row">
+<div class="col-sm-4">
+<img src="4.jpg" alt="bus" width=300px height=200px>
+<b> VOLVO </b>
+
+</div>
+
+<div class="row">
+<div class="col-sm-4">
+<img src="8.jpg" alt="bus" width=300px height=200px>
+<b> SUPER LUXURY </b>
+
+</div>
+
+<div class="row">
+<div class="col-sm-4">
+<img src="9.jpg" alt="bus" width=300px height=200px>
+<b>CLASSIC 1</b>
+</div>
+</div></br>
+<div class="row">
+<div class="col-sm-4">
+<img src="7.jpg" alt="bus" width=300px height=200px style="margin-left:25px;">
+<b style="margin-left:25px;"> CLASSIC 2</b>
+
+</div>
+
+<div class="row" >
+<div class="col-sm-4">
+<img src="5.jpg" alt="bus" width=300px height=200px style="margin-left:15px;">
+<b style="margin-left:15px;"> MEDIUM</b>
+
+</div>
+
+<div class="row">
+<div class="col-sm-4">
+<img src="6.jpg" alt="bus" width=300px height=200px>
+<p><b>LOW </b></p>
+</div>
+</div>
+</div>
+</div>
+</div></div></br>
+<footer style="background-color:purple;text-align:center;color:black;margin-bottom:0;">&copy; Copyright 2018
+<p>CONTACT US : 9123455600</p>
+<p>EMAIL US : adminbus@gmail.com</p>
+</footer>
+
+
+
+ 
+
 <script type="text/javascript">
   var a=document.getElementById('a');
     var b=document.getElementById('b');
+    var c=document.getElementById('c');
     a.addEventListener('click',function(){
     document.getElementById('log').style.display="block";
-    document.getElementById('reg').style.display="none";});
+    document.getElementById('reg').style.display="none";
+    document.getElementById('home').style.display="none";});
     b.addEventListener('click',function(){
     document.getElementById('reg').style.display="block";
-    document.getElementById('log').style.display="none";}); 
+    document.getElementById('log').style.display="none";
+    document.getElementById('home').style.display="none";});
+    c.addEventListener('click',function(){
+    document.getElementById('reg').style.display="none";
+    document.getElementById('log').style.display="none";
+    document.getElementById('home').style.display="block";}); 
 </script>
 </body>
 </html>

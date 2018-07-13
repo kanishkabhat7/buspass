@@ -2,7 +2,7 @@
 error_reporting(0);
 
 $user = 'root';
-$pass = '';
+$pass = 'transport';
 $url = 'localhost';
 $db_name = 'transport';
 

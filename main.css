@@ -92,7 +92,7 @@ em {
 
 .main-page
 {
-  width: 80%;
+  width: 100%;
   padding: 1% 0;
   background-image: linear-gradient(to bottom, #004da4 0%, #1e3c6e 100%);
   float: left;
